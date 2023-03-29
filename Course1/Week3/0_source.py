@@ -11,7 +11,13 @@ while x<5:
     print("Not there yet, x="+str(x))
     x=x+1
 print("x=" + str(x))
-
+# OUTPUT
+# Not there yet, x=0
+# Not there yet, x=1
+# Not there yet, x=2
+# Not there yet, x=3
+# Not there yet, x=4
+# x=5
 
 # %%
 #--------------------------------------------------
@@ -24,7 +30,13 @@ def attempts(n):
     print("Done")
     
 attempts(5)
-
+# OUTPUT
+# Attempt 1
+# Attempt 2
+# Attempt 3
+# Attempt 4
+# Attempt 5
+# Done
 
 # %%
 #--------------------------------------------------
@@ -34,22 +46,34 @@ my_variable=5
 while my_variable <10:
     print("Hello")
     my_variable +=1
+# OUTPUT
+# Hello
+# Hello
+# Hello
+# Hello
+# Hello
 
+# %%
 x=1
 sum=0
 while x<10:
     sum +=x
     x+=1
 print(x,sum)
+# OUTPUT
+# 10 45
 
+# %%
 x=1
 product=1
 while x<10:
     product = product*x
     x+=1
 print(x,product)
+# OUTPUT
+# 10 362880
 
-
+# %%
 #In this code, there's an initialization problem that's causing 
 # our function to behave incorrectly. Can you find the problem and fix it?
 def count_down(start_number):
@@ -60,7 +84,11 @@ def count_down(start_number):
   print("Zero!")
 
 count_down(3)
-
+# OUTPUT
+# 3
+# 2
+# 1
+# Zero!
 
 # %%
 #--------------------------------------------------
@@ -77,6 +105,12 @@ def print_range(start, end):
 		n+=1
 
 print_range(1, 5)  # Should print 1 2 3 4 5 (each number on its own line) 
+# OUTPUT
+# 1
+# 2
+# 3
+# 4
+# 5
 # %%
 #-----------------------------------For Loops---------------------------------
 
@@ -87,17 +121,27 @@ print_range(1, 5)  # Should print 1 2 3 4 5 (each number on its own line)
 # for cuando haya una secuencia de elementos que desee iterar. 
 # Utilice bucles while cuando desee repetir una acción hasta 
 # que cambie una condición.
-
+# %%
 #imprime 0..4
 for x in range(5):
     print(x)
 
-
+#OUTPUT 
+# 0
+# 1
+# 2
+# 3
+# 4
+# %%
 friends = ['Taylor','Alex','Pat','Eli']
 for friend in friends:
-    print("Hi"+friend)
-
-
+    print("Hi "+ friend)
+#OUTPUT
+# Hi Taylor
+# Hi Alex
+# Hi Pat
+# Hi Eli
+# %%
 values=[23,52,59,37,48]
 sum=0
 length=0
@@ -105,9 +149,11 @@ for value in values:
     sum+=value
     length +=1
 
-print("Total sum: " + str(sum) +" - Average: " + str(sum/length))
+print("Length: "+ str(length)+" - Total sum: " + str(sum) +" - Average: " + str(sum/length))
+# OUTPUT
+# Lenght: 5 - Total sum: 219 - Average: 43.8
 
-
+# %%
 #Fill in the gaps of the sum_squares function, so that it returns
 #the sum of all the squares of numbers between 0 and x(not included).
 #Remember that you can use the range(x) function to generate a sequence of
@@ -123,7 +169,7 @@ def sum_squares(x):
     return sum
 
 print(sum_squares(10))#should be 285
-
+# 285
 
 # %%
 #--------------------------------------------------
@@ -136,14 +182,14 @@ for n in range(1,10):
     product = product * n
 print(product)
 
-
+# %%
 def to_celsius(x):
     return (x-32)*5/9
 #imprime 0..100, step->10
 for x in range(0,101,10):
     print(x,to_celsius(x))
 
-
+# %%
 #calculo el factorial de un numero
 def factorial(n):
     result=1
@@ -302,3 +348,5 @@ def recursive_function(parameters):
         return base_case_value
     recursive_function(modified_parameters)
 # %%
+
+
