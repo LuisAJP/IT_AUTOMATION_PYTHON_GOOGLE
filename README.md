@@ -3,7 +3,6 @@
 ## COURSES
 
 ### [Course 1&emsp;Crash Course on Python](Course1/)
-:innocent:
 - [x] [**Week 1**](Course1/Week1) Hello Python!
 - [x] [**Week 2**](Course1/Week2) Basic Python Syntax
 - [x] [**Week 3**](Course1/Week3) Loops
